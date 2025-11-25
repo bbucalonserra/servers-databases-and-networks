@@ -1,0 +1,15 @@
+<!doctype html>   
+<html>   
+    <head>   
+    <title>List webpage!</title>   
+    </head>  
+    <body>
+    <h1>Our Books</h1>  
+    <h3>Here is a list of the books we sell:</h3>  
+    <ul> 
+        <% availableBooks.forEach(function(book){ %>   
+        <li><%= book.name %>, £<%= book.price %></li>  
+    <% }) %>   
+    </ul>   
+    </body>   
+</html> 
